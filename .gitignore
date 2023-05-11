@@ -316,3 +316,20 @@ Workshop - Cat Shelter/views/addCat.html
 Workshop - Cat Shelter/views/catShelter.html
 Workshop - Cat Shelter/views/editCat.html
 Workshop - Cat Shelter/views/home/index.html
+.DS_Store
+03. Cubicle-Workshop-Part-1-Resources/config/config.js
+03. Cubicle-Workshop-Part-1-Resources/config/database.json
+03. Cubicle-Workshop-Part-1-Resources/config/express.js
+03. Cubicle-Workshop-Part-1-Resources/config/routes.js
+03. Cubicle-Workshop-Part-1-Resources/index.js
+03. Cubicle-Workshop-Part-1-Resources/package-lock.json
+03. Cubicle-Workshop-Part-1-Resources/package.json
+03. Cubicle-Workshop-Part-1-Resources/static/css/site.css
+03. Cubicle-Workshop-Part-1-Resources/static/images/background.png
+03. Cubicle-Workshop-Part-1-Resources/static/images/favicon.png
+03. Cubicle-Workshop-Part-1-Resources/static/images/logo.png
+03. Cubicle-Workshop-Part-1-Resources/views/404.hbs
+03. Cubicle-Workshop-Part-1-Resources/views/about.hbs
+03. Cubicle-Workshop-Part-1-Resources/views/create.hbs
+03. Cubicle-Workshop-Part-1-Resources/views/details.hbs
+03. Cubicle-Workshop-Part-1-Resources/views/index.hbs
