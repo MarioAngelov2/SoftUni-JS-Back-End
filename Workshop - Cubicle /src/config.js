@@ -3,8 +3,8 @@ const config = {
     PORT: 1234,
   },
   development: {
-    PORT: 5000,
+    PORT: 2000,
   },
 };
 
-module.exports = config[process.env || "development"];
+module.exports = config[process.env.node_env || "development"];
