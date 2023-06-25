@@ -1,7 +1,8 @@
 {
     "321dsad23": {
         "name": "BMW",
-        "description": "321321321",
+        "description": "Very fast car indeed!",
+        "imageUrl": "",
         "price": 3300
     }
 }
