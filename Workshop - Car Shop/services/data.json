@@ -1,8 +1,26 @@
 {
-    "321dsad23": {
-        "name": "BMW",
-        "description": "Very fast car indeed!",
-        "imageUrl": "",
-        "price": 3300
-    }
+  "dsada21328ds": {
+    "name": "dsfdf",
+    "description": "fdsfds",
+    "imageUrl": "dfs",
+    "price": 23
+  },
+  "9387cb69-fb1a": {
+    "name": "sadsad",
+    "description": "asdasd",
+    "imageUrl": "sadas",
+    "price": 222
+  },
+  "a7fcf15c-73ca": {
+    "name": "asdda",
+    "description": "asdas",
+    "imageUrl": "dasda",
+    "price": 22
+  },
+  "a3ebe2e6-49bd": {
+    "name": "BMW",
+    "description": "sadasda",
+    "imageUrl": "salsa12",
+    "price": 12
+  }
 }
