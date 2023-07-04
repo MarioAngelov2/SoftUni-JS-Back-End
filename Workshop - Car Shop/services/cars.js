@@ -15,7 +15,7 @@ async function read() {
 
 async function write(data) {
     try {
-        fs.writeFile(filePath, JSON.stringify(data));
+        fs.writeFile(filePath, JSON.stringify(data, null, 2));
     } catch (error) {
         console.error("Database write error");
         console.error(error);
@@ -34,15 +34,52 @@ async function getById(id) {
     }
 }
 
-async function getAll() {
+async function getAll(query) {
     const data = await read();
-    return Object.entries(data).map(([id, v]) => Object.assign({}, { id }, v));
+    let cars = Object.entries(data).map(([id, v]) =>
+        Object.assign({}, { id }, v)
+    );
+
+    if (query.search) {
+        cars = cars.filter((c) =>
+            c.name.toLowerCase().includes(query.search.toLowerCase())
+        );
+    }
+    if (query.from) {
+        cars = cars.filter((c) => c.price >= Number(query.from));
+    }
+    if (query.to) {
+        cars = cars.filter((c) => c.price <= Number(query.to));
+    }
+
+    return cars;
+}
+
+async function createCar(car) {
+    const cars = await read();
+
+    let id;
+
+    do {
+        id = generateId();
+    } while (cars.hasOwnProperty(id));
+
+    cars[id] = car;
+
+    await write(cars);
+}
+
+function generateId() {
+    return "xxxxxxxx-xxxx".replace(/x/g, () =>
+        ((Math.random() * 16) | 0).toString(16)
+    );
 }
 
 module.exports = () => (req, res, next) => {
     req.storage = {
         getAll,
         getById,
+        createCar,
     };
     next();
 };
